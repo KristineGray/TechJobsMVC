@@ -15,7 +15,7 @@
         </tr>
         <tr>
             <td>Employer</td>
-            <td>@job.Employer</td>
+            <td><a asp-controller="Search" asp-action="Results" asp-route-searchType="employer" asp-route-searchTerm="@job.Employer">@job.Employer</a></td>
         </tr>
         <tr>
             <td>Location</td>
