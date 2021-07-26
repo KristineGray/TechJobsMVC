@@ -19,15 +19,15 @@
         </tr>
         <tr>
             <td>Location</td>
-            <td>@job.Location</td>
+            <td><a asp-controller="Search" asp-action="Results" asp-route-searchType="location" asp-route-searchTerm="@job.Location">@job.Location</a></td>
         </tr>
         <tr>
             <td>Position Type</td>
-            <td>@job.PositionType</td>
+            <td><a asp-controller="Search" asp-action="Results" asp-route-searchType="positionType" asp-route-searchTerm="@job.PositionType">@job.PositionType</a></td>
         </tr>
         <tr>
             <td>Skill</td>
-            <td>@job.CoreCompetency</td>
+            <td><a asp-controller="Search" asp-action="Results" asp-route-searchType="coreCompetency" asp-route-searchTerm="@job.CoreCompetency">@job.CoreCompetency</a></td>
         </tr>
     </table>
 }
